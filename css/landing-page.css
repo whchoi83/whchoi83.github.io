@@ -141,6 +141,14 @@ h6 {
     font-size: 3em;
 }
 
+.info-banner {
+    padding: 10px 0;
+}
+
+.info-banner {
+    font-size: 15px;
+}
+
 .banner ul {
     margin-bottom: 0;
 }
@@ -182,4 +190,8 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+ul.company-info {
+    color: #555;
 }
