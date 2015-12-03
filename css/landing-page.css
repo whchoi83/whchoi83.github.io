@@ -61,11 +61,6 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-/* for arcus services page */
-#arcus {
-    padding: 50px;
-}
-
 @media(max-width:767px) {
     .intro-header {
         background: url(../img/intro-mobilebg.jpg) no-repeat center center;
@@ -91,12 +86,6 @@ h6 {
 
     .intro-divider {
         width: 100%;
-    }
-
-    #arcus {
-        padding-left:5px;
-        width: 100%;
-        height: auto;
     }
 }
 

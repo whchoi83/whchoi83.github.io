@@ -27,32 +27,6 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
-    <!-- image popup script -->
-    <script LANGUAGE="JavaScript">
-        function CaricaFoto(img){
-            foto1= new Image();
-            foto1.src=(img);
-            Controlla(img);
-        }
-
-        function Controlla(img){
-            if((foto1.width!=0)&&(foto1.height!=0)){
-                viewFoto(img);
-            } else {
-                funzione="Controlla('"+img+"')";
-                intervallo=setTimeout(funzione,20);
-            }
-        }
-
-        function viewFoto(img){
-            largh=foto1.width+20;
-            altez=foto1.height+20;
-            stringa="width="+largh+",height="+altez;
-            finestra=window.open(img,"",stringa);
-        }
-    </script>
 </head>
 
 <body>
@@ -79,6 +53,9 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
+                    <a href="#recruit">Recruit</a>
+                </li>
+                <li>
                     <a href="#services">Services</a>
                 </li>
                 <li>
@@ -93,12 +70,9 @@
 
 
 <!-- Header -->
-
 <a name="about"></a>
-
 <div class="intro-header">
     <div class="container">
-
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
@@ -123,21 +97,17 @@
 
     </div>
     <!-- /.container -->
-
 </div>
 <!-- /.intro-header -->
 
 <!-- Page Content -->
-
 <div class="content-section-a">
-
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-sm-6">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">About JaM2in</h2>
-
                 <p class="lead">
                     잼투인(주)은 네이버(<a href="http://www.navercorp.com">NAVER</a>)에서
                     아커스(<a href="http://naver.github.io/arcus/">ARCUS</a>)를 개발했던 핵심 인력이 창업한 회사로,
@@ -148,48 +118,47 @@
                 <img class="img-responsive" src="img/about-logo-jam2in.png" alt="">
             </div>
         </div>
-
     </div>
     <!-- /.container -->
-
 </div>
 <!-- /.content-section-a -->
 
-<a name="services"></a>
-
+<a name="recruit"></a>
 <div class="content-section-b">
-
     <div class="container">
-
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Recruit</h2>
-
                 <p class="lead">
                     ARCUS를 더욱 발전시켜 나갈 수 있고, 국내의 서비스들에 기여
                     할 수 있는 NoSQL을 개발하고자 하는 열정과 역량을 가진 최고
                     의 개발자 분들을 모시고자 합니다.<br>
-                    <a class="lead" id="btn btn-primary btn-lg" href="https://github.com/jam2in/recruit">View Recruit</a>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="mailto:recruit@jam2in.com" class="btn btn-default btn-lg">
+                                <i class="fa fa-envelope-square fa-fw"></i> <span class="network-name">recruit</span></a>
+                        </li>
+                        <li>
+                            <a href="service.html" class="btn btn-default btn-lg">
+                                <i class="fa fa-link"></i><span class="network-name">View More</span></a>
+                        </li>
+                    </ul>
                 </p>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                 <img class="img-responsive" src="img/recruit.png" alt="">
             </div>
         </div>
-
     </div>
     <!-- /.container -->
 </div>
 <!-- /.content-section-b -->
 
 <a name="services"></a>
-
 <div class="content-section-a">
-
     <div class="container">
-
         <div class="row">
             <div class="col-lg-5 col-sm-6">
                 <hr class="section-heading-spacer">
@@ -200,25 +169,30 @@
                         href="http://zookeeper.apache.org" title="ZooKeeper">ZooKeeper</a>를 기반으로
                     네이버 (<a href="http://www.naver.com" title="Naver">NAVER</a>) 서비스들의 요구 사항을 반영해 개발한 메모리 캐시 클라우드
                     입니다.<br>
-                    <a class="lead" id="btn btn-primary btn-lg2" href="service_arcus.html">View More</a>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="mailto:support@jam2in.com" class="btn btn-default btn-lg">
+                                <i class="fa fa-envelope-square fa-fw"></i> <span class="network-name">support</span></a>
+                        </li>
+                        <li>
+                            <a href="service.html" class="btn btn-default btn-lg">
+                                <i class="fa fa-link"></i><span class="network-name">View More</span></a>
+                        </li>
+                    </ul>
                 </p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <img class="img-responsive" src="img/services-arcus.png" alt="">
             </div>
         </div>
-
     </div>
     <!-- /.container -->
 </div>
-<!-- /.content-section-c -->
+<!-- /.content-section-a -->
 
 <a name="contact"></a>
-
 <div class="banner">
-
     <div class="container">
-
         <div class="row">
             <div class="col-lg-6">
                 <h2>Connect to JaM2in:</h2>
@@ -226,16 +200,8 @@
             <div>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://facebook.com/jam2in" class="btn btn-default btn-lg"><i
-                                class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jam2in/arcus" class="btn btn-default btn-lg"><i
-                                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="mailto:junhyun.park@jam2in.com" class="btn btn-default btn-lg">
-                            <i class="fa fa-mail-forward fa-fw"></i> <span class="network-name">email</span></a>
+                        <a href="mailto:contact@jam2in.com" class="btn btn-default btn-lg">
+                            <i class="fa fa-envelope-square fa-fw"></i> <span class="network-name">contact</span></a>
                     </li>
                     <li>
                         <a href="javascript: CaricaFoto('img/map.png')" BORDER="0" class="btn btn-default btn-lg">
@@ -247,8 +213,9 @@
 
     </div>
     <!-- /.container -->
-
 </div>
+<!-- /.banner -->
+
 <!-- Footer -->
 <footer>
     <div class="container">
