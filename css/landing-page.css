@@ -35,8 +35,8 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../img/intro-bg.png) no-repeat center center;
+    background-size: contain;
 }
 
 .intro-message {
@@ -63,7 +63,8 @@ h6 {
 
 @media(max-width:767px) {
     .intro-header {
-        background: url(../img/intro-mobilebg.jpg) no-repeat center center;
+        background: url(../img/intro-mobilebg.png) no-repeat center center;
+        background-size: contain;
     }
 
     .intro-message {
