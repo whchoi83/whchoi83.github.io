@@ -184,3 +184,7 @@ p.copyright {
     line-height: 1.8em;
     margin-top: 40px;
 }
+
+.col-desc {
+    z-index: 1;
+}
